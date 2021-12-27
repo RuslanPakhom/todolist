@@ -12,6 +12,13 @@ html, body{
     
 }
 
+.header{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding:20px;
+}
+
 .container{
     display:flex;
     min-height:100vh;
@@ -88,11 +95,11 @@ html, body{
     padding:10px 0;
 }
 
-.fa-plus{
+.fa-plus, .fa-ban{
     color:grey;
 }
 
-.fa-minus{
+.fa-minus, .fa-save{
     color: #db4c3f;
 }
 
