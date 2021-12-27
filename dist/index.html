@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/40bb90b63c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">To-do List app</div>
+    <div class="container">
+        <div class="menu">
+            <div class="no-proj">
+                <ul>
+                    <li id="inbox"><i class="fas fa-inbox"></i>   Inbox <button id="new-task-inbox">
+                        <i class="fas fa-plus"></i></button></li>
+                    <li id="today"><i class="fas fa-calendar-day"></i>   Today</li>
+                    <li id="upcoming"><i class="far fa-calendar-alt"></i>   Upcoming</li>
+                </ul>
+            </div>
+
+            <div class="add-task-form">
+                <div class="form-field">
+                    <label for="task-name">Task name</label>
+                    <input id="task-name">
+                    <label for="task-descr">Description</label>
+                    <input id="task-descr">
+                    <label for="task-date">Due date</label>
+                    <input id="task-date" type="date">
+                    <label for="task-priority">Priority</label>
+                    <select name="task-priority" id="task-priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                      </select>
+                    <label for="task-project">Project</label>
+                    <input id="task-project" disabled>
+                    
+                </div>
+                <div class="buttons">
+                    <button id="cancel-add-task">Cancel</button>
+                    <button disabled id="add-task">Add</button>
+                </div>
+                </div>
+
+        <div class="proj">
+            <div class="proj-title">
+                <p>Projects</p><button id="new-proj"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="add-form">
+            <div class="form-field">
+                <label for="project-name">Project name</label>
+                <input id="project-name">
+            </div>
+            <div class="buttons">
+                <button id="cancel-add-proj">Cancel</button>
+                <button disabled id="add-proj">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+  
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
